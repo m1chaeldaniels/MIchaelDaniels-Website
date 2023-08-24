@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*DEVELOPER:Michael Daniels, IS117-004, Spring 2023, */
+
+
+html {
+    background-color: black;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    width: 98%;
+    max-width: 100%;
+    margin: 0 auto 100px auto;
+    background-color: black;
+}
+
+
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+#section0 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+/* Style the video element */
+#section0 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; 
+}
+
+/* Style the content */
+#section0 .content {
+    position: relative;
+    z-index: 1; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* the styles for the header */
+header {
+    padding: 1.5em 0 2em 0;
+    border-bottom: 1px solid #000080;
+    background-image: #000080;
+    background-color: #f5f5f5
+}
+
+header h2 {
+    font-size: 175%;
+    color: #000080;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    color: #000080;
+    font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+    font-size: 185%;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+     margin-top: 50px;
+     font-weight: bold;
+
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.title {
+    position: relative;
+    top: -50px;
+  }
+
+h4 {
+    font-size: 120%;
+    font-weight: bold;
+   
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080;
+}
+
+h5 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 110%;
+    color: black;
+    background-color: transparent;
+}
+
+header img {
+    float: left;
+    padding: 0 3.75%;
+}
+
+.bg-custom-color {
+    background-color:#f5f5f5;
+}
+
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 170%; 
+    color: #f5f5f5 !important; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-nav .nav-link {
+    font-size: 100%; 
+    color: white !important; 
+    margin-right: 1rem; 
+    text-transform: uppercase; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #e5e5e5; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+}
+   
+
+
+
+.image-container {
+    width: 60%;
+    float: left;
+    margin-right: 5%;
+}
+
+.left-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    width: 35%;
+    float: left;
+    padding-top: 20px; 
+}
+
+.text-container p {
+    font-size: 120%; 
+    text-align: center;
+}
+
+.text-buttons {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+h1.title {
+    font-size: 150%; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.custom-large-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+p {
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+@media (max-width: 576px) {
+    #demo {
+        width: 90% !important;
+    }
+}
+
+
+
+/* Card css */
+
+
+
+.skill-image {
+    transition: transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    border-radius: 15px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.skill-image:hover {
+    transform: scale(0.9); 
+    cursor: pointer;
+    border-radius: 5%; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.card-body {
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+
+.card-body:hover {
+    transform: translate(0, -5px);
+}
+
+
+
+.btn {
+    border: 1px solid #000080;
+    border-image-slice: 1;
+    background: gray !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: gray !important;
+    text-decoration: none;
+    transition: all .4s ease;
+    border-radius: 1rem;
+
+
+}
+
+.btn:hover,
+.btn:focus {
+    background: white !important;
+
+    -webkit-text-fill-color: #000080 !important;
+    border: 1px solid #000080 !important;
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+}
+
+.resume-box {
+
+    border-image-slice: 1;
+    background: #000080 !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: #000080 !important;
+    text-decoration: none;
+    transition: all .4s ease;
+    border-radius: 1rem;
+    
+
+
+
+}
+
+.resume-box a {
+    display: block;
+    text-align: center;
+}
+
+.section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #e6e6e6; 
+    margin-bottom: .5px; 
+    min-height: 100vh;
+}
+  
+  .section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .section ul {
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  .section li {
+    margin-bottom: 10px;
+  }
+  
+  .section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section label {
+    margin-bottom: 5px;
+  }
+  
+  .section input,
+  .section textarea {
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  
+  .section input[type="submit"] {
+    width: auto;
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+  
+
+  #section1 {
+    background-color: #e6e6e6;
+  }
+  
+  #section2 {
+    background-color: #d9d9d9;
+  }
+  
+  #section3 {
+    background-color: #e6e6e6;
+  }
+
+#section4 {
+    background-color: #d9d9d9;
+}
+
+#section5 {
+    background-color: #e6e6e6;
+}
+  
+#section6 {
+    background-color: #d9d9d9;
+}
+
+  
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        font-size: 120%;
+        color: #f5f5f5 !important;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+/*  image size for Experience section on mobile */
+@media (max-width: 767px) {
+    .col-md-4 img.skill-image {
+        max-width: 80%; 
+        height: auto;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .col-md-2 img.skill-image {
+        max-width: 60%; 
+        height: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .col-md-6 img.skill-image {
+        max-width: 80%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: 10px; 
+        min-height: auto; 
+    }
+}
+
+
+@media (min-width: 992px) {
+    #section1 .col-md-4.order-md-1 img {
+        max-width: 100%;
+        height: auto;
+        width: auto; 
+    }
+}
+
+@media (min-width: 992px) {
+    #section2 .col-md-4.order-md-1 img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+}
+/* Default styles for all devices */
+
+/* Styles for screens up to 768px wide */
+@media only screen and (max-width: 768px) {
+    /* Mobile-specific styles */
+}
+
+/* Styles for screens between 768px and 1024px wide  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+
+}
+
+/* Styles for screens larger than 1024px wide */
+@media only screen and (min-width: 1024px) {
+    
+}
