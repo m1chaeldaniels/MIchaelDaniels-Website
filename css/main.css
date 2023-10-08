@@ -234,6 +234,9 @@ h1.title {
     color: white;  /* Set the color to white */
 }
 
+.skill-icon:hover {
+    color: darkblue;
+}
 
 
 
