@@ -298,11 +298,11 @@ p {
 
 
 .btn {
-    border: 1px solid #000080;
+    border: 1px solid white;
     border-image-slice: 1;
     background: gray !important;
     -webkit-background-clip: text !important;
-    -webkit-text-fill-color: gray !important;
+    -webkit-text-fill-color: white !important;
     text-decoration: none;
     transition: all .4s ease;
     border-radius: 1rem;
@@ -314,8 +314,8 @@ p {
 .btn:focus {
     background: white !important;
 
-    -webkit-text-fill-color: #000080 !important;
-    border: 1px solid #000080 !important;
+    -webkit-text-fill-color: darkblue !important;
+    border: 1px solid white !important;
     box-shadow: #222 1px 0 10px;
     text-decoration: underline;
 }
