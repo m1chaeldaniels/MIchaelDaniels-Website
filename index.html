@@ -20,7 +20,9 @@
 </head>
 
 <body>
-
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
     <div class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);">
@@ -380,12 +382,12 @@
             }
     
             function changeText() {
-                dynamicText.textContent = ""; // Clear existing text
+                dynamicText.textContent = ""; 
                 typeWriter(`I am a ${sentences[index]}.`, dynamicText, 100);
                 index = (index + 1) % sentences.length;
             }
     
-            setInterval(changeText, 5000); // Change the sentence every 5 seconds (adjust as needed)
+            setInterval(changeText, 5000); // Change  sentence every 5 seconds 
         });
     </script>
 
