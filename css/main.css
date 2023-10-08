@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*DEVELOPER:Michael Daniels, IS117-004, Spring 2023, */
+/*DEVELOPER:Michael Daniels */
 
 
 html {
@@ -32,26 +32,55 @@ a:hover {
     width: 100%;
     height: 100vh; 
     overflow: hidden;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Style the video element */
-#section0 video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none; 
+
+
+.contact-icons a {
+    color: white;
+   
 }
 
-/* Style the content */
-#section0 .content {
-    position: relative;
-    z-index: 1; 
-    color: #fff; 
-    text-align: center; 
-    padding: 20px; 
+.name {
+    /* Add styles for the name */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.sentence {
+    /* Add styles for the sentence */
+    margin-bottom: 20px; /* Adjust as needed */
+    text-align: center;
+}
+
+.sentence h2 {
+    font-size: 24px; /* Adjust as needed */
+}
+
+.icons {
+    /* Add styles for the icons */
+    display: flex;
+    gap: 10px; /* Adjust as needed */
+}
+
+.icons a {
+    color: white;
+    font-size: 24px; /* Adjust as needed */
+}
+
+/* Additional styling for dynamic text animation */
+@keyframes changeText {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.dynamic-text {
+    animation: changeText 4s infinite;
 }
 
 /* the styles for the header */
@@ -88,6 +117,7 @@ h1 {
 
 h2 {
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 .title {
     position: relative;

@@ -26,7 +26,7 @@
             <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);">
                 <!-- Brand -->
 
-                <div class="navbar-brand"><h6>Michael Daniels</h6></div>
+            
 
                 <!-- Responsive Button for the smaller menu -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -61,17 +61,31 @@
         </div>
     </div>
  
-<div id="section0" class="section">
-    <video autoplay loop muted playsinline >
-        <source src="images/trim2.mov" type="video/mp4">
-    </video>
-
-    <div class="content">
-        <h2>Hi, my name is Michael Daniels. I am an aspiring Software Engineer.</h2>
+    <div id="section0" class="section">
+        <div class="content">
+            <div class="name">
+                <h1>Hi, I'm Michael</h1>
+            </div>
+            <div class="sentence">
+                <h2>Welcome to my Website.  <span class="dynamic-text"></span></h2>
+            </div>
+            <div class="contact-icons-container">
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/michaeltdaniels/" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i> <!-- fa-3x makes the icon three times larger -->
+                    </a>
+                    <a href="https://github.com/m1chaeldaniels" target="_blank">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                    <a href="mailto:danielssmichael@gmail.com">
+                        <i class="fas fa-envelope fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
     </div>
-
-</div>
-
 
 
 
@@ -343,6 +357,33 @@
         </div>
     </footer>
     </div>
+
+    <script>
+        function typeWriter(text, element, speed) {
+            let i = 0;
+            const interval = setInterval(() => {
+                element.textContent += text[i];
+                i++;
+                if (i === text.length) {
+                    clearInterval(interval);
+                }
+            }, speed);
+        }
+    
+        function changeText() {
+            const dynamicText = document.querySelector('.dynamic-text');
+            const sentences = ["software engineer", "passionate student", " relentless creator", "continious learner"];
+            let index = 0;
+    
+            setInterval(() => {
+                dynamicText.textContent = ""; // Clear existing text
+                typeWriter(`I am a ${sentences[index]}.`, dynamicText, 100);
+                index = (index + 1) % sentences.length;
+            }, 5000); // Change the sentence every 3 seconds (adjust as needed)
+        }
+    
+        document.addEventListener('DOMContentLoaded', changeText);
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
