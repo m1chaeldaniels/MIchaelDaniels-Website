@@ -8,7 +8,7 @@
 
 
 html {
-    background-color: black;
+    background-color: transparent;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     width: 98%;
     max-width: 100%;
     margin: 0 auto 100px auto;
-    background-color: black;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 
@@ -79,9 +79,10 @@ header h3 {
 h1 {
     font-size: 185%;
     font-family: 'Times New Roman', Times, serif;
-    text-decoration: underline;
+    
      margin-top: 50px;
      font-weight: bold;
+     color: white;
 
 }
 
@@ -99,7 +100,7 @@ h4 {
    
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: #000080;
+    color: white;
 }
 
 h5 {
@@ -107,7 +108,7 @@ h5 {
     text-align: center;
     font-weight: bold;
     font-size: 110%;
-    color: black;
+    color: white;
     background-color: transparent;
 }
 
@@ -280,9 +281,9 @@ p {
 .resume-box {
 
     border-image-slice: 1;
-    background: #000080 !important;
+    background: white !important;
     -webkit-background-clip: text !important;
-    -webkit-text-fill-color: #000080 !important;
+    -webkit-text-fill-color: white !important;
     text-decoration: none;
     transition: all .4s ease;
     border-radius: 1rem;
@@ -318,6 +319,7 @@ p {
   .section p {
     font-size: 18px;
     margin-bottom: 20px;
+    color: white;
   }
   
   .section ul {
@@ -353,27 +355,27 @@ p {
   
 
   #section1 {
-    background-color: #e6e6e6;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
   }
   
   #section2 {
-    background-color: #d9d9d9;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
   }
   
   #section3 {
-    background-color: #e6e6e6;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
   }
 
 #section4 {
-    background-color: #d9d9d9;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 #section5 {
-    background-color: #e6e6e6;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
   
 #section6 {
-    background-color: #d9d9d9;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
   
