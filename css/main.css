@@ -41,36 +41,41 @@ a:hover {
 
 
 
+.contact-icons-container {
+    margin-top: 40px; /* Increase the top margin as needed */
+    text-align: center;
+}
+
+.contact-icons {
+    margin-top: 20px; /* Increase the top margin as needed */
+}
+
 .contact-icons a {
+    margin: 0 10px; /* Increase the horizontal margin between icons */
     color: white;
-   
 }
 
 .name {
-    /* Add styles for the name */
-    margin-bottom: 10px; /* Adjust as needed */
+    text-align: left;
+    font-size: 2em; /* Adjust the font size based on your design */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.name h1 {
+    margin: 0;
 }
 
 .sentence {
     /* Add styles for the sentence */
-    margin-bottom: 20px; /* Adjust as needed */
     text-align: center;
 }
 
 .sentence h2 {
     font-size: 24px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
 }
 
-.icons {
-    /* Add styles for the icons */
-    display: flex;
-    gap: 10px; /* Adjust as needed */
-}
 
-.icons a {
-    color: white;
-    font-size: 24px; /* Adjust as needed */
-}
 
 /* Additional styling for dynamic text animation */
 @keyframes changeText {
