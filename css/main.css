@@ -362,6 +362,8 @@ header {
     width: 100%;
     height: auto;
     border-radius: 40px;
+    display: block;
+    margin: 0 auto;
 }
 
 #project-section .project-button {
@@ -596,9 +598,11 @@ header {
 }
 
 #projecttemp-section .projecttemp-image {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 40px;
+    display: block;
+    margin: 0 auto;
 }
 
 #projecttemp-section .projecttemp-button {
@@ -683,6 +687,27 @@ header {
     background: linear-gradient(180deg, rgba(11, 39, 66, 0) 0%, #522f4d 100%);
     transition: background 0.3s ease-in-out;
 }
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    #section6 form button {
+        width: 100%; /* Full width for mobile */
+    }
+}
+
+/* Tablet and desktop-specific styles */
+@media only screen and (min-width: 769px) {
+    #section6 form {
+        width: 50%; /* Adjust width for desktop */
+        margin: 0 auto; /* Center the form */
+    }
+    
+    #section6 form button {
+        width: auto; /* Auto width for desktop */
+        padding: 15px 30px; /* Adjust padding for desktop */
+    }
+}
+
 
 .linkedin-button {
     width: 60px;
@@ -1043,9 +1068,9 @@ p {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: 90%;
         margin: 20px auto;
-        padding: 10px;
+        padding: 20px;
     }
 
     #project-section .project-content,
@@ -1059,7 +1084,6 @@ p {
     #projecttemp-section .left-content,
     #projecttemp-section .right-content {
         width: 100%;
-        padding: 10px;
     }
 
     #project-section .project-title,
@@ -1070,8 +1094,17 @@ p {
     #projecttemp-section .built-with,
     #projecttemp-section .projecttemp-built-with,
     #projecttemp-section .projecttemp-button {
-        text-align: left;
+        text-align: center;
         margin: 10px 0;
+    }
+
+    #project-section .project-image,
+    #projecttemp-section .projecttemp-image {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px;
     }
 
     .footer {
