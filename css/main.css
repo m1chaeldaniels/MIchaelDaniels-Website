@@ -18,7 +18,7 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto 100px auto;
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 
 
 
@@ -37,7 +37,7 @@ a:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +244,7 @@ header {
     align-items: center;
     padding: 20px 0;
     transition: top 0.3s;
-    background: rgba(94, 88, 115, 19%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 .navbar-brand {
@@ -339,7 +339,7 @@ header {
 
 /* Style for the project section */
 #project-section .project-box {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(109.6deg, rgb(51, 67, 88) 30%, rgb(16, 37, 60) 51.2%, rgb(78, 76, 107) 92.6%);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -586,7 +586,7 @@ header {
 
 /* Style for the project section */
 #projecttemp-section .projecttemp-box {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(109.6deg, rgb(51, 67, 88) 30%, rgb(16, 37, 60) 51.2%, rgb(78, 76, 107) 92.6%);
     padding: 40px;
     display: flex;
     align-items: center;
@@ -697,7 +697,7 @@ header {
 
     padding: 50px;
     /* Adjust padding as needed */
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
@@ -967,7 +967,7 @@ p {
 
 
 #about-section {
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 #section2 {
@@ -983,17 +983,17 @@ p {
 }
 
 #project-section {
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 #projecttemp-section {
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 
 
 #section6 {
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 
@@ -1003,7 +1003,7 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     color: white;
     text-align: center;
     padding: 10px;
