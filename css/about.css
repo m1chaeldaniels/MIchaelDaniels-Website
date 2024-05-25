@@ -20,7 +20,7 @@ header {
     align-items: center;
     padding: 20px 0;
     transition: top 0.3s;
-    background: rgba(94, 88, 115, 19%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 .navbar-brand {
@@ -209,7 +209,7 @@ p {
 }
 
 body {
-    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     /* Background image */
     background-size: cover;
     /* Scale the background image to be as large as possible */
@@ -393,7 +393,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+        background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
         /* Remove background image */
     }
 
