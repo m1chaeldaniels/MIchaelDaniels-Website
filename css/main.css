@@ -649,8 +649,7 @@ header {
     border-radius: 15px;
     padding: 30px;
     margin-top: 30px;
-    width: 60%;
-    height: 100%;
+    width: 100%;
 }
 
 #section6 form label,
@@ -658,19 +657,12 @@ header {
     display: block;
     margin: 10px 0;
     width: 100%;
-    height: 100%;
-}
-
-@media only screen and (max-width: 767px) {
-    #section6 form label,
-    #section6 form input {
-        width: 90%;
-    }
 }
 
 #section6 form button {
-    width: 225px;
-    height: 54px;
+    width: 100%;
+    height: auto;
+    padding: 15px;
     border-radius: 50px;
     background: linear-gradient(180deg, rgba(30, 81, 128, 0.00) 0%, #8D5F86 150%);
     color: #fff;
@@ -882,7 +874,7 @@ p {
 }
 
 #section4 {
-    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(0, 0, 0) 51.2%, rgb(16, 37, 60) 98.6%);
 }
 
 #project-section {
@@ -1046,27 +1038,38 @@ p {
         width: 80%;
     }
 
-    #project-section .project-box {
+    #project-section .project-box,
+    #projecttemp-section .projecttemp-box {
         flex-direction: column;
-        align-items: flex-start;
-        width: 90%;
+        align-items: center;
+        text-align: center;
+        width: 100%;
         margin: 20px auto;
+        padding: 10px;
     }
 
-    #project-section .project-content {
+    #project-section .project-content,
+    #projecttemp-section .projecttemp-content {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     #project-section .left-content,
-    #project-section .right-content {
+    #project-section .right-content,
+    #projecttemp-section .left-content,
+    #projecttemp-section .right-content {
         width: 100%;
+        padding: 10px;
     }
 
     #project-section .project-title,
     #project-section .built-with,
     #project-section .project-built-with,
-    #project-section .project-button {
+    #project-section .project-button,
+    #projecttemp-section .projecttemp-title,
+    #projecttemp-section .built-with,
+    #projecttemp-section .projecttemp-built-with,
+    #projecttemp-section .projecttemp-button {
         text-align: left;
         margin: 10px 0;
     }
