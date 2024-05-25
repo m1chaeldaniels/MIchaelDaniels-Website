@@ -7,7 +7,6 @@
 
 /*DEVELOPER:Michael Daniels */
 
-
 html {
     background-color: transparent;
 }
@@ -19,13 +18,7 @@ body {
     max-width: 100%;
     margin: 0 auto 100px auto;
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
-
-
-
-
 }
-
-
 
 a:focus,
 a:hover {
@@ -43,8 +36,6 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-
-
 
 .contact-icons-container {
     margin-top: 70px;
@@ -71,7 +62,6 @@ a:hover {
 }
 
 .sentence {
-
     text-align: center;
 }
 
@@ -82,17 +72,14 @@ a:hover {
 
 .sentence2 {
     color: #8D5F87;
-
 }
 
 .button-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    /* Increase the space between the sentence and buttons */
 }
 
-/* Adjust the alignment and position of the buttons */
 .button-left,
 .button-right {
     width: 225px;
@@ -125,24 +112,16 @@ a:hover {
 .button-left:hover span,
 .button-right:hover span {
     color: white;
-    /* Set the color to inherit the default color */
 }
-
-
-
-
-
 
 /* Additional styling for dynamic text animation */
 @keyframes changeText {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -153,14 +132,11 @@ a:hover {
 }
 
 /* the styles for the header */
-
-
 header h2 {
     font-size: 175%;
     color: #000080;
     font-family: 'Outfit', sans-serif;
 }
-
 
 header h3 {
     font-size: 130%;
@@ -172,11 +148,9 @@ header h3 {
 h1 {
     font-size: 185%;
     font-family: 'Outfit', sans-serif;
-
     margin-top: 50px;
     font-weight: bold;
     color: white;
-
 }
 
 h2 {
@@ -192,7 +166,6 @@ h2 {
 h4 {
     font-size: 120%;
     font-weight: bold;
-
     text-align: center;
     font-family: 'Outfit', sans-serif;
     color: white;
@@ -216,14 +189,8 @@ header img {
     background-color: #f5f5f5;
 }
 
-
-
-
-
-
 /* New navbar styles */
 header {
-    
     color: white;
     font-family: 'Outfit', sans-serif;
 }
@@ -253,15 +220,13 @@ header {
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    font-size: 120%; 
-    color: #f5f5f5 !important; 
+    font-size: 120%;
+    color: #f5f5f5 !important;
     font-family: 'Orkney', sans-serif;
-    
 }
 
 .navbar-brand a {
     text-decoration: none;
-    
     color: white;
 }
 
@@ -282,7 +247,6 @@ header {
 .navbar-toggler span {
     height: 3px;
     width: 25px;
-   
     margin: 4px;
     transition: 0.4s;
 }
@@ -304,7 +268,6 @@ header {
     text-decoration: none;
     color: white;
     transition: color 0.3s;
-    
 }
 
 .navbar-nav a:hover {
@@ -347,10 +310,7 @@ header {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-
 }
-
-
 
 #project-section .project-content {
     display: flex;
@@ -359,8 +319,6 @@ header {
     width: 100%;
     padding: 20px;
 }
-
-
 
 #project-section .left-content {
     flex: 1;
@@ -371,7 +329,6 @@ header {
     flex: 1;
     padding: 10px;
     text-align: center;
-
 }
 
 #project-section .project-title {
@@ -387,7 +344,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #project-section .project-built-with {
@@ -430,14 +386,11 @@ header {
 
 #project-section .project-box:nth-child(odd) .project-content {
     flex-direction: row-reverse;
-    /* Flips the content to the other side */
 }
 
 #project-section .project-box:nth-child(odd) .project-image {
     order: -1;
-    /* Moves the image to the other side for odd boxes */
 }
-
 
 .about-section {
     text-align: center;
@@ -471,10 +424,7 @@ header {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-
 }
-
-
 
 #about-section .about-content {
     display: flex;
@@ -483,8 +433,6 @@ header {
     width: 100%;
     padding: 20px;
 }
-
-
 
 #about-section .left-content {
     flex: 1;
@@ -495,7 +443,6 @@ header {
     flex: 1;
     padding: 10px;
     text-align: center;
-
 }
 
 #about-section .about-text {
@@ -511,7 +458,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #about-section .about-built-with {
@@ -554,12 +500,10 @@ header {
 
 #about-section .about-box:nth-child(even) .about-content {
     flex-direction: row-reverse;
-    /* Flips the content to the other side */
 }
 
 #about-section .about-box:nth-child(even) .about-image {
     order: -1;
-    /* Moves the image to the other side for odd boxes */
 }
 
 .projecttemp-section {
@@ -595,10 +539,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     gap: 20px;
-
 }
-
-
 
 #projecttemp-section .projecttemp-content {
     display: flex;
@@ -607,8 +548,6 @@ header {
     width: 100%;
     padding: 20px;
 }
-
-
 
 #projecttemp-section .left-content {
     flex: 1;
@@ -619,7 +558,6 @@ header {
     flex: 1;
     padding: 10px;
     text-align: center;
-
 }
 
 #projecttemp-section .projecttemp-title {
@@ -643,7 +581,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #projecttemp-section .projecttemp-built-with {
@@ -681,29 +618,21 @@ header {
 
 #projecttemp-section .projecttemp-buttons {
     display: flex;
-
 }
-
 
 #projecttemp-section .projecttemp-button:hover {
     background: linear-gradient(180deg, rgba(11, 39, 66, 0) 0%, #522f4d 100%);
     transition: background 0.3s ease-in-out;
 }
 
-
-
-
 #section6 {
-
     padding: 50px;
-    /* Adjust padding as needed */
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     color: white;
     min-height: 70vh;
-    /* Adjust the minimum height as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -730,11 +659,9 @@ header {
     margin: 10px 0;
     width: 100%;
     height: 100%;
-
 }
 
 @media only screen and (max-width: 767px) {
-
     #section6 form label,
     #section6 form input {
         width: 90%;
@@ -791,17 +718,13 @@ header {
     transform: scale(1.1);
 }
 
-
 #section3 .transparent-box {
     background: linear-gradient(109.6deg, rgb(51, 67, 88) 30%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 100%);
-    padding: 20px; 
-    border-radius: 10px; 
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     gap: 20px;
-   
 }
-
-
 
 .image-container {
     width: 60%;
@@ -831,7 +754,6 @@ header {
     margin-top: 20px;
 }
 
-
 h1.title {
     font-size: 150%;
     text-align: center;
@@ -848,32 +770,22 @@ h1.title {
     color: white;
     margin: 0 5px;
     text-decoration: none;
-    /* Set the color to white */
 }
 
 .skill-icon:hover {
     color: #8D5F86;
 }
 
-
-
 p {
     font-size: 120%;
     font-family: 'Outfit', sans-serif;
 }
-
-
 
 @media (max-width: 576px) {
     #demo {
         width: 90% !important;
     }
 }
-
-
-
-
-
 
 .skill-image {
     transition: transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -888,10 +800,7 @@ p {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .resume-box {
-
     border-image-slice: 1;
     background: white !important;
     -webkit-background-clip: text !important;
@@ -899,10 +808,6 @@ p {
     text-decoration: none;
     transition: all .4s ease;
     border-radius: 1rem;
-
-
-
-
 }
 
 .resume-box a {
@@ -911,7 +816,6 @@ p {
 }
 
 .section {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -965,7 +869,6 @@ p {
     font-size: 16px;
 }
 
-
 #about-section {
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
@@ -990,13 +893,9 @@ p {
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
-
-
 #section6 {
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
-
-
 
 .footer {
     position: fixed;
@@ -1011,7 +910,6 @@ p {
 }
 
 @media (max-width: 768px) {
-
     .button-left,
     .button-right {
         width: 225px;
@@ -1031,7 +929,6 @@ p {
         line-height: 100%;
         text-transform: capitalize;
         margin: 10px 0;
-        /* Adjust the margin for positioning */
         transition: background 0.3s ease-in-out;
     }
 }
@@ -1078,15 +975,13 @@ p {
     }
 }
 
-/*  image size for Experience section on mobile */
+/* image size for Experience section on mobile */
 @media (max-width: 767px) {
     .col-md-4 img.skill-image {
         max-width: 80%;
         height: auto;
     }
 }
-
-
 
 @media (max-width: 767px) {
     .navbar-brand {}
@@ -1098,7 +993,6 @@ p {
         height: auto;
     }
 }
-
 
 @media (max-width: 767px) {
     .col-md-6 img.skill-image {
@@ -1113,7 +1007,6 @@ p {
         min-height: auto;
     }
 }
-
 
 @media (min-width: 992px) {
     #section1 .col-md-4.order-md-1 img {
@@ -1132,13 +1025,60 @@ p {
 }
 
 /* Default styles for all devices */
-
-/* Styles for screens up to 768px wide */
 @media only screen and (max-width: 768px) {
     /* Mobile-specific styles */
+    .name h1 {
+        font-size: 1.5em;
+    }
+
+    .sentence h2 {
+        font-size: 1.2em;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-left,
+    .button-right {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    #project-section .project-box {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #project-section .project-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #project-section .left-content,
+    #project-section .right-content {
+        width: 100%;
+    }
+
+    #project-section .project-title,
+    #project-section .built-with,
+    #project-section .project-built-with,
+    #project-section .project-button {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    .footer {
+        position: static;
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
 }
 
-/* Styles for screens between 768px and 1024px wide  */
+/* Styles for screens between 768px and 1024px wide */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}
 
 /* Styles for screens larger than 1024px wide */
