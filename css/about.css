@@ -1,0 +1,497 @@
+header {
+    
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container-header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: top 0.3s;
+    background: rgba(94, 88, 115, 19%);
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 120%; 
+    color: #f5f5f5 !important; 
+    font-family: 'Orkney', sans-serif;
+    
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    
+    color: white;
+}
+
+.navbar-brand a:hover {
+    color: lightgray;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggler span {
+    height: 3px;
+    width: 25px;
+   
+    margin: 4px;
+    transition: 0.4s;
+}
+
+.navbar-collapse {
+    display: flex;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav li {
+    margin: 0 15px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    
+}
+
+.navbar-nav a:hover {
+    color: lightgray;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #333;
+    }
+
+    .navbar-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18px;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transition: 0.4s;
+    }
+
+    .change .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
+/* 
+This CSS uses a combination of Flexbox and Grid layout to create a responsive design that works well on both large screens and small screens (such as mobile devices). The layout of the page is largely controlled by the .container, .sidebar, and .main-content rules. CSS Variables are used extensively to ensure consistency and maintainability. The calc function is used to calculate values for various properties dynamically. The layout automatically adjusts when the viewport width is 768px or less thanks to the media query, making the design responsive. The print styles apply when the page is printed, ensuring that the printed version looks good too.
+This CSS uses CSS Variables (also known as CSS Custom Properties) for convenient maintainability and better performance.
+The :root selector refers to the root element. In HTML, the root element is always the <html> element.
+   
+*/
+
+:root {
+    /* Colors */
+    --color-primary: #e1e9ed;  
+    --color-secondary: #040c3c;  
+    --color-accent: #0f0f09;  
+    --hover-color: #1b4664;
+
+
+
+    /* Spacing */
+    --base-spacing: 1.5rem;
+    /* Main spacing for elements */
+    --section-spacing: 2.5rem;
+    /* Space between sections */
+    --sidebar-spacing: 1.5rem;
+    /* Padding around sidebar content */
+
+    /* Fonts */
+    --font-primary: 'Outfit', sans-serif;
+    /* Main font */
+    --font-secondary: 'Outfit', sans-serif;;
+    /* Secondary font (not used in this CSS) */
+    --base-font-size: 1rem;
+    /* Base font size for body text */
+    --h1-font-size: 2rem;
+    /* Font size for main headings */
+    --h2-font-size: 1.75rem;
+    /* Font size for sub-headings */
+    --h3-font-size: 1.5rem;
+    /* Font size for sub-sub-headings */
+    --h4-font-size: 1.25rem;
+    /* Font size for the smallest headings */
+
+    /* Other */
+    --base-line-height: 1.5;
+    /* Base line height for text */
+    --section-separator: 1px solid var(--color-accent);
+    /* Line to separate sections */
+    --icon-font-size: 2rem;
+    /* Size of the font icons */
+    --transition-speed: 0.3s;
+    /* Transition speed for link hover effects */
+
+    /* Link hover color */
+}
+
+/* Global styles for HTML and body elements, including a reset for default browser styles */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+body {
+    background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+    /* Background image */
+    background-size: cover;
+    /* Scale the background image to be as large as possible */
+    color: var(--color-primary);
+    /* Main text color */
+    font-size: var(--base-font-size);
+    /* Base font size */
+    line-height: var(--base-line-height);
+    /* Base line height */
+}
+
+.container {
+    display: flex;
+    /* Apply Flexbox layout */
+   
+    /* Reverse the natural order of elements */
+    max-width: 90vw;
+    /* Maximum width of the container */
+    margin: 2rem auto;
+    /* Centrally align the container horizontally */
+    padding: 0;
+    background: rgba(255, 255, 255, 0.1);
+    /* Background color of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    /* Add shadow around the container */
+    border-radius: 10px;
+    /* Add rounded corners to the container */
+    overflow: hidden;
+    /* Hide any content that goes outside the container */
+    margin-top: 5%;
+}
+
+.sidebar {
+    flex: 1;
+    /* Take up 1 fraction of the available space */
+    display: flex;
+    /* Apply Flexbox layout */
+    flex-direction: column;
+    /* Stack the children vertically */
+    justify-content: space-between;
+    /* Distribute space evenly between the children */
+    padding: var(--sidebar-spacing);
+    /* Add padding around the sidebar content */
+    background: linear-gradient(109.6deg, rgb(51, 67, 88) 30%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 92.6%);
+    /* Background color of the sidebar */
+    color: white;
+    /* Text color in the sidebar */
+}
+
+.sidebar .portrait img {
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Scale the image to cover its content box, could distort the image */
+    width: 100%;
+    /* Full width of the parent */
+    height: auto;
+    /* Keep aspect ratio */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* Increase the space between the sentence and buttons */
+}
+
+/* Adjust the alignment and position of the buttons */
+.button-left,
+.button-right {
+    width: 110px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(30, 81, 128, 0.00) 0%, #8D5F86 150%);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFCFC;
+    font-family: 'Outfit', sans-serif;
+    font-size: 80%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+    margin-right: 50%;
+    margin-top: 20%;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-left:hover,
+.button-right:hover {
+    background: linear-gradient(180deg, rgba(11, 39, 66, 0) 0%, #522f4d 100%);
+    transition: background 0.3s ease-in-out;
+}
+
+.button-left:hover span,
+.button-right:hover span {
+    color: white;
+    /* Set the color to inherit the default color */
+}
+
+.links {
+    display: flex;
+    /* Apply Flexbox layout */
+    justify-content: space-between;
+    /* Distribute space evenly between the children */
+    padding: 0.5rem;
+    /* Add padding around the links */
+}
+
+.links a {
+    color: inherit;
+    /* Use the parent's text color */
+    font-size: var(--icon-font-size);
+    /* Icon size */
+    text-decoration: none;
+    /* Remove the underline from links */
+    transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;
+    /* Add transition effects for link hover */
+}
+
+.links a:hover {
+    color: var(--hover-color);
+    /* Change text color on hover */
+    transform: scale(1.1);
+    /* Enlarge the link on hover */
+}
+
+.main-content {
+    flex: 3;
+    /* Take up 3 fractions of the available space */
+    padding: var(--section-spacing);
+    /* Add padding around the main content */
+}
+
+.main-content section,
+.main-content header {
+    margin-bottom: var(--section-spacing);
+    /* Add space below each section */
+    padding-bottom: var(--section-spacing);
+    /* Add padding at the bottom of each section */
+    border-bottom: var(--section-separator);
+    /* Add a line below each section */
+}
+
+.main-content section:last-child {
+    margin-bottom: 0;
+    /* Remove the bottom margin from the last section */
+    border-bottom: none;
+    /* Remove the line from the last section */
+}
+
+.skill-list {
+    display: grid;
+    /* Apply Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Create as many columns as fit into the container */
+    gap: calc(.5 * var(--base-spacing));
+    /* Add space between grid items */
+    margin-bottom: 1rem;
+    /* Add space below the list */
+}
+
+.skill-list li {
+    display: flex;
+    /* Apply Flexbox layout */
+    align-items: center;
+    /* Center children vertically */
+}
+
+.fa-skill-icon {
+    margin-right: var(--base-spacing);
+    /* Add space to the right of the icon */
+    font-size: var(--icon-font-size);
+    /* Icon size */
+}
+
+/* Responsive design: apply different styles when the viewport width is 768px or less */
+
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(180deg, rgba(27, 55, 94, 0.99) 0%, rgba(24, 39, 59, 0.99) 99.99%, rgba(0, 0, 0, 0.99) 100%), linear-gradient(180deg, rgba(52, 87, 124, 0.51) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(77, 75, 159, 0.99) 0%, rgba(0, 0, 0, 0.00) 100%);
+        /* Remove background image */
+    }
+
+    .container {
+        flex-direction: column;
+        /* Stack children vertically */
+        margin: 0 auto;
+        /* Centrally align the container horizontally */
+        padding: 0;
+        /* Remove padding */
+        width: 100%;
+        margin-top: 100px;
+        /* Full width of the viewport */
+    }
+
+    .sidebar {
+        order: -1;
+        /* Move the sidebar below the main content */
+        height: 100vh;
+        /* Full height of the viewport */
+        overflow-y: auto;
+        /* Enable scrolling if content overflows vertically */
+    }
+
+    .main-content {
+        padding-top: 1rem;
+        /* Add padding at the top of the main content */
+    }
+}
+
+
+@media print {
+    :root {
+        --base-font-size: 12pt;
+        
+    }
+
+    /* Reset */
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+        font-family: 'Outfit', sans-serif;
+        color: #333;
+        
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 0.1rem;
+        background: rgba(255, 255, 255, 0.1);
+        
+    }
+
+    .sidebar,
+    .main-content,
+    p {
+        padding: 0.2rem;
+    }
+
+    .sidebar {
+        order: -1;
+        height: auto;
+    }
+
+    .main-content {
+        padding-top: 0.2rem;
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 0.2rem;
+    }
+
+    .skill-list {
+        grid-template-columns: repeat(5, 1fr);
+        list-style-type: none;
+        gap: calc(.5 * var(--base-spacing));
+    }
+
+    .links,
+    h1,
+    .portrait {
+        display: none;
+    }
+
+    .main-content section,
+    .main-content header {
+        margin-bottom: calc(.8 * var(--section-spacing));
+        padding-bottom: calc(.8 *var(--section-spacing));
+        border-bottom: calc(.8 *var(--section-separator));
+        
+    }
+
+}
