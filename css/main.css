@@ -697,6 +697,11 @@ header {
 
 /* Tablet and desktop-specific styles */
 @media only screen and (min-width: 769px) {
+    #section6 form {
+        width: 50%; /* Adjust width for desktop */
+        margin: 0 auto; /* Center the form */
+    }
+    
     #section6 form button {
         width: auto; /* Auto width for desktop */
         padding: 15px 30px; /* Adjust padding for desktop */
