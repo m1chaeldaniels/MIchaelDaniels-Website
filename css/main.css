@@ -688,6 +688,22 @@ header {
     transition: background 0.3s ease-in-out;
 }
 
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    #section6 form button {
+        width: 100%; /* Full width for mobile */
+    }
+}
+
+/* Tablet and desktop-specific styles */
+@media only screen and (min-width: 769px) {
+    #section6 form button {
+        width: auto; /* Auto width for desktop */
+        padding: 15px 30px; /* Adjust padding for desktop */
+    }
+}
+
+
 .linkedin-button {
     width: 60px;
     height: 60px;
